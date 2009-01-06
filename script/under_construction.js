@@ -35,29 +35,29 @@ function overlayPendingElements(){
   $(".pending").each(function(i){
     
     //clone the element so that we can overlay it
-    var replacement = $(this).clone();
+    var overlay_element = $(this).clone();
     
 
     //set the height
     var height = $(this).height();
     var width = $(this).width();
     
-    $(replacement).height(height);
-    $(replacement).width(width);
+    $(overlay_element).height(height);
+    $(overlay_element).width(width);
     
     //set the position
     var pos = $(this).position();
 
-    $(replacement).css("top", pos.top);
-    $(replacement).css("left", pos.left);
+    $(overlay_element).css("top", pos.top);
+    $(overlay_element).css("left", pos.left);
     
     //add the class that sets opacity and background color
-    $(replacement).addClass("overlay_for_pending");
+    $(overlay_element).addClass("overlay_for_pending");
 
     //todo: replace this with a delimited class to indicate what milestone it is
-    $(replacement).html("");
+    $(overlay_element).html("");
     
     //insert after the element in question
-    $(this).after(replacement);
+    $(this).after(overlay_element);
   });
 }
