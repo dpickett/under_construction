@@ -1,0 +1,21 @@
+h1. Under Construction
+
+Show what's currently done and not done in your web applications. Inspired by Thoughtbot's MileMarker
+
+h2. Requirements
+
+* JQuery 
+
+h2. Example Usage
+
+TODO
+
+h2. MIT License
+
+h2. TODO
+
+* Mechanism on the overlay to show when/or in what iteration the feature will be unlocked
+* Improved Documentation
+* Example (github page most likely)
+* QUnit Testing
+* Browser Testing
