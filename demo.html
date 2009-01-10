@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <title>under_construction @ GitHub - Enlight Solutions, Inc.</title>
+    <link rel="stylesheet" href="stylesheets/under_construction.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="stylesheets/es_github.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js" type="text/javascript"></script>
+    <script src="javascripts/under_construction.js" type="text/javascript" charset="utf-8"></script>
+    
+    <style>
+      .under_construction, .implemented {
+        width: 300px;
+        border: 1px solid #ccc;
+      }
+      
+      .implemented {
+        background-color: #0e0;
+      }
+      
+      .sandbox {
+        border-top: 1px solid #ccc;
+      }
+      
+      .sandbox ul {
+        margin: 0;
+        padding: 0;
+      }
+      .sandbox ul li {
+        display: block;
+        float: left;
+        background-color: #888800;
+        padding: 5px;
+        margin: 0;
+      }
+      
+      .sandbox div {
+        padding: 5px;
+      }
+    </style>
+    
+  </head>
+  <body><a href="http://github.com/dpickett/under_construction"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub" /></a>
+  
+  <div id="container">
+    <a href="http://www.enlightsolutions.com"><img src="images/es_logo.png" alt="Enlight Solutions, Inc. Logo"/></a>
+      <h1>under_construction Demo Page</h1>
+      <a href="index.html">&laquo; Back to Main</a>
+      <p>The Following Code is on this page</p>
+      <pre>
+        $(document).ready(function(){
+          $("#show_all").click(function(e){
+            e.preventDefault();
+            showPendingElements();
+            hideOverlayOfPendingElements();
+          });
+
+          $("#toggle_overlay").click(function(e){
+            e.preventDefault();
+            showPendingElements();
+            toggleOverlayOfPendingElements();
+          });
+
+          $("#toggle_display").click(function(e){
+            e.preventDefault();
+            hideOverlayOfPendingElements();
+            toggleDisplayOfPendingElements();
+          });
+        });
+      </pre>
+      <ul>
+        <li><a href="#" id="show_all">Show All Elements</a></li>
+        <li><a href="#" id="toggle_overlay">Toggle Overlay of Pending Elements</a></li>
+        <li><a href="#" id="toggle_display">Toggle Display of Pending Elements</a></li>
+      </ul>
+      <div class="clear"></div>
+      
+      <div class="sandbox clearfix">
+        <ul class="clearfix">
+          <li>Menu Item</li>
+          <li class="pending">Menu Item I haven't built yet</li>
+          <li>Menu Item</li>
+        </ul>
+    
+        <div class="under_construction pending">
+          This feature hasn't been built yet
+        </div>
+    
+        <div class="under_construction pending whiteout" style="float:left">
+          This is a floated element is for a feature I haven't built yet. Toggling it shouldn't affect the position of the item next to it
+        </div>
+    
+        <div class="implemented" style="float: left">
+          This is a floated element that should be unaffected by the hiding of the pending element because I gave the pending element class "whiteout"
+        </div>
+      </div>
+    
+    </div>
+    
+    <script type="text/javascript" charset="utf-8">
+      $(document).ready(function(){
+        $("#show_all").click(function(e){
+          e.preventDefault();
+          showPendingElements();
+          hideOverlayOfPendingElements();
+        });
+        
+        $("#toggle_overlay").click(function(e){
+          e.preventDefault();
+          showPendingElements();
+          toggleOverlayOfPendingElements();
+        });
+        
+        $("#toggle_display").click(function(e){
+          e.preventDefault();
+          hideOverlayOfPendingElements();
+          toggleDisplayOfPendingElements();
+        });
+      });
+    </script>
+  </body>
+</html>
