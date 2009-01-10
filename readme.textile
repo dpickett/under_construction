@@ -1,6 +1,6 @@
 h1. Under Construction
 
-Show what's currently done and not done in your web applications. Inspired by Thoughtbot's MileMarker
+Show what's in development on your web applications. Inspired by Thoughtbot's MileMarker
 
 h2. Requirements
 
@@ -8,7 +8,13 @@ h2. Requirements
 
 h2. Example Usage
 
-TODO
+"View the demo":http://dpickett.github.com/under_construction/demo.html
+
+h2. How to Use
+
+Put the script and stylesheets in your project. Give elements that aren't built yet the class of "pending". You can toggle an overlay or display of these elements using toggleOverlayOfPendingElements() and toggleDisplayOfPendingElements() respectively.
+
+Works great with the "hotkeys plugin":http://code.google.com/p/js-hotkeys/
 
 h2. MIT License
 
@@ -16,6 +22,5 @@ h2. TODO
 
 * Mechanism on the overlay to show when/or in what iteration the feature will be unlocked
 * Improved Documentation
-* Example (github page most likely)
 * QUnit Testing
 * Browser Testing
