@@ -88,10 +88,29 @@
     
         <div class="under_construction pending">
           This feature hasn't been built yet
+          
+          <dl>
+            <dt><label for="name">Name</label></dt>
+            <dd><input type="text" id="name"></dd>
+            <dt><label for="contact_preference_email">Contact Preference</label></dt>
+            <dd>
+              <input type="radio" name="contact_preference" id="contact_preference_email" value="email" /> Email&nbsp;&nbsp; 
+              <input type="radio" name="contact_preference"value="phone"/> Phone
+            </dd>
+          </dl>
         </div>
     
         <div class="under_construction pending whiteout" style="float:left">
           This is a floated element is for a feature I haven't built yet. Toggling it shouldn't affect the position of the item next to it
+          
+          <dl>
+            <dt><label for="country">Country</label></dt>
+            <dd>
+              <select id="country">
+                <option value="United States">United States</option>
+              </select>
+            </dd>
+          </dl>
         </div>
     
         <div class="implemented" style="float: left">
