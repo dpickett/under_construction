@@ -67,6 +67,10 @@
             hideOverlayOfPendingElements();
             toggleDisplayOfPendingElements();
           });
+
+          $(document).bind('keydown', 'ctrl+e', function(evt){
+            toggleOverlayOfPendingElements();
+          });
         });
       </pre>
       <ul>
@@ -141,6 +145,11 @@
           hideOverlayOfPendingElements();
           toggleDisplayOfPendingElements();
         });
+
+        $(document).bind('keydown', 'ctrl+e', function(evt){
+          toggleOverlayOfPendingElements();
+        });
+
       });
     </script>
   </body>
