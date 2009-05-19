@@ -33,18 +33,18 @@ function showPendingElements() {
 
 function hideOverlayOfPendingElements() {
   $(".overlay_for_pending").remove();
+  $(".pending").removeClass("overlayed");
 }
 
 function overlayPendingElements(){
   $(".pending").each(function(i){
     
     //clone the element so that we can overlay it
-    var replacement = $(this).clone();
-    
+    var replacement = $("<div>");
 
     //set the height
-    var height = $(this).height();
-    var width = $(this).width();
+    var height = $(this).outerHeight();
+    var width = $(this).outerWidth();
     
     $(replacement).height(height);
     $(replacement).width(width);
@@ -61,7 +61,8 @@ function overlayPendingElements(){
     //todo: replace this with a delimited class to indicate what milestone it is
     $(replacement).html("");
     
+
     //insert after the element in question
-    $(this).after(replacement);
+    $("body").append(replacement);
   });
 }
