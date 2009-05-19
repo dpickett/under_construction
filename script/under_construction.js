@@ -35,12 +35,11 @@ function overlayPendingElements(){
   $(".pending").each(function(i){
     
     //clone the element so that we can overlay it
-    var overlay_element = $(this).clone();
-    
+    var overlay_element = $("<div>");
 
     //set the height
-    var height = $(this).height();
-    var width = $(this).width();
+    var height = $(this).outerHeight();
+    var width = $(this).outerWidth();
     
     $(overlay_element).height(height);
     $(overlay_element).width(width);
@@ -58,6 +57,6 @@ function overlayPendingElements(){
     $(overlay_element).html("");
     
     //insert after the element in question
-    $(this).after(overlay_element);
+    $("body").append(overlay_element);
   });
 }
