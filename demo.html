@@ -52,24 +52,24 @@
         $(document).ready(function(){
           $("#show_all").click(function(e){
             e.preventDefault();
-            showPendingElements();
-            hideOverlayOfPendingElements();
+            $.under_construction.showPendingElements();
+            $.under_construction.hideOverlayOfPendingElements();
           });
 
           $("#toggle_overlay").click(function(e){
             e.preventDefault();
-            showPendingElements();
-            toggleOverlayOfPendingElements();
+            $.under_construction.showPendingElements();
+            $.under_construction.toggleOverlayOfPendingElements();
           });
 
           $("#toggle_display").click(function(e){
             e.preventDefault();
-            hideOverlayOfPendingElements();
-            toggleDisplayOfPendingElements();
+            $.under_construction.hideOverlayOfPendingElements();
+            $.under_construction.toggleDisplayOfPendingElements();
           });
 
           $(document).bind('keydown', 'ctrl+e', function(evt){
-            toggleOverlayOfPendingElements();
+            $.under_construction.toggleOverlayOfPendingElements();
           });
         });
       </pre>
@@ -125,29 +125,29 @@
     <script type="text/javascript">
       google.load("jquery", "1.3.2");
     </script>
-    <script src="javascripts/under_construction.js" type="text/javascript" charset="utf-8"></script>
+    <script src="javascripts/jquery.under_construction.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" charset="utf-8">
       $(document).ready(function(){
         $("#show_all").click(function(e){
           e.preventDefault();
-          showPendingElements();
-          hideOverlayOfPendingElements();
+          $.under_construction.showPendingElements();
+          $.under_construction.hideOverlayOfPendingElements();
         });
         
         $("#toggle_overlay").click(function(e){
           e.preventDefault();
-          showPendingElements();
-          toggleOverlayOfPendingElements();
+          $.under_construction.showPendingElements();
+          $.under_construction.toggleOverlayOfPendingElements();
         });
         
         $("#toggle_display").click(function(e){
           e.preventDefault();
-          hideOverlayOfPendingElements();
-          toggleDisplayOfPendingElements();
+          $.under_construction.hideOverlayOfPendingElements();
+          $.under_construction.toggleDisplayOfPendingElements();
         });
 
         $(document).bind('keydown', 'ctrl+e', function(evt){
-          toggleOverlayOfPendingElements();
+          $.under_construction.toggleOverlayOfPendingElements();
         });
 
       });
