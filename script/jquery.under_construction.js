@@ -59,8 +59,6 @@ jQuery.under_construction = {
     else {
       this.overlayPendingElements();
     }
-  },
-  
-
+  }
 }
 
