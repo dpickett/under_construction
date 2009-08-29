@@ -62,3 +62,11 @@ jQuery.under_construction = {
   }
 }
 
+$(document).ready(function(){
+  $(window).resize(function(){
+    if(jQuery(".overlay_for_pending").length > 0) {
+      jQuery.under_construction.toggleOverlayOfPendingElements();
+      jQuery.under_construction.toggleOverlayOfPendingElements();
+    }
+  });
+});
