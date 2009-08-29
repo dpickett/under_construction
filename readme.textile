@@ -20,7 +20,6 @@ h2. MIT License
 
 h2. TODO
 
-* On window resize, reposition the overlays
 * Mechanism on the overlay to show when/or in what iteration the feature will be unlocked
 * Improved Documentation
 * Blue-Ridge Testing
