@@ -27,7 +27,7 @@ jQuery.under_construction = {
       jQuery(overlay_element).width(width);
 
       //set the position
-      var pos = jQuery(this).position();
+      var pos = jQuery(this).offset();
 
       jQuery(overlay_element).css("top", pos.top);
       jQuery(overlay_element).css("left", pos.left);
